@@ -5,10 +5,8 @@ using UnityEngine.UI;
 
 public class SelfRotation : MonoBehaviour
 {
-
     public Slider slider;
     public Toggle Direction;
-    
 
     private float Speed;
     private bool IsStop;
@@ -17,7 +15,7 @@ public class SelfRotation : MonoBehaviour
     {
         slider.onValueChanged.AddListener(x => OnSliderValueChanged(x));
     }
-    // Update is called once per frame
+
     void Update()
     {
         if (!IsStop)
